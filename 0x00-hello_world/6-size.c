@@ -1,17 +1,23 @@
 #include <stdio.h>
+
 /**
- * main - Prints number from 0 - 9
- * Return: 0 (success)
+ * main - print size of data
+ *
+ * Return: always (0)
+ *
  */
 int main(void)
 {
-	int i;
+        char a;
+        int b;
+        long int c;
+        long long int d;
+        float e;
 
-	for (i = 48; i <58; i++)
-	{
-
-		putchar(i);
-	}
-	putchar('\n');
-	return (0);
+        printf("Size of a char: %1u byte(s)\n", sizeof(a));
+        printf("Size of an int: %1u byte(s)\n", sizeof(b));
+        printf("Size of a long int: %1u byte(s)\n", sizeof(c));
+        printf("Size of a long long int: %1u byte(s)\n", sizeof(d));
+        printf("Size of a float: %1u byte(s)\n", sizeof(e));
+        return (0);
 }
